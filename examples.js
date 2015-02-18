@@ -37,5 +37,5 @@ var data = [
     [15, 15]
 ]
 
-domout.html('<h1>Scatter Graph</h1>')
-domout.svg(viz.scattergraph(data))
+domout.html('<h1>Scatter Plot</h1>')
+domout.svg(viz.scatterplot(data))
