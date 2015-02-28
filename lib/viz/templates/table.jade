@@ -1,5 +1,10 @@
 table
-  each row, i in data
+  thead
     tr
-      each item, i in row
-        td= item
+      each row, i in header
+        th= row
+  tbody
+    each row, i in data
+      tr
+        each item, i in row
+          td= item
