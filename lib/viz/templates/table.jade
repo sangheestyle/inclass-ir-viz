@@ -1,9 +1,5 @@
 table
+  each row, i in data
     tr
-        td John
-        td 3
-        td 5
-    tr
-        td Adam
-        td 4
-        td 8
+      each item, i in row
+        td= item
