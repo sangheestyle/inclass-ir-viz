@@ -2,7 +2,14 @@ svg(width="500", height="100")
   g(transform="translate(0,100)")
     g(transform="scale(1,-1)")
       each val, i in data
-        rect(width="10", height=val, x=10*i)
+        unless highlight
+          rect(width="10", height=val, x=10*i, opacity="1.0")
+        else
+          if i === highlight
+            rect(width="10", height=val, x=10*i, opacity="1.0")
+          else
+            rect(width="10", height=val, x=10*i, opacity="0.3")
+
 
 text(x="0", y="40", fill="red")
   | some title
