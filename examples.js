@@ -2,6 +2,7 @@ var domout = require('./lib/domout'),
     viz = require('./lib/viz')
 
 var data = [5, 10, 15, 20, 25]
+var data2 = [[5, 2],[10, 3], [15, 5], [20, 6], [25, 3]]
 
 domout.html('<h1>Circles</h1>')
 
@@ -16,6 +17,9 @@ domout.svg(viz.barchart(data, {
 
 domout.html('<h1>Line Graph</h1>')
 domout.svg(viz.linegraph(data))
+
+domout.html('<h1>Line Graph with 2d array</h1>')
+domout.svg(viz.linegraph(data2))
 
 domout.html('<h1>List</h1>')
 domout.html(viz.list(data))
