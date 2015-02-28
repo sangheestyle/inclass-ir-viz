@@ -25,10 +25,12 @@ var data = [
     ['Adam', 4, 8]
 ]
 
+
 domout.html(viz.json(data))
 
 domout.html('<h1>Table</h1>')
-domout.html(viz.table(data))
+var header = ['name', 'item1', 'item2']
+domout.html(viz.table(header, data, true))
 
 
 var data = [
