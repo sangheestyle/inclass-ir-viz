@@ -12,7 +12,10 @@ domout.svg(viz.circles(data))
 domout.html('<h1>Barchart</h1>')
 domout.svg(viz.barchart(data, {
     title: 'some title',
-    highlight: 1
+    highlight: 1,
+    color: 'rgb(255, 0, 0)',
+    width: 20,
+    margin: 1
 }))
 
 domout.html('<h1>Line Graph</h1>')

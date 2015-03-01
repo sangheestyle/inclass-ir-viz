@@ -3,13 +3,12 @@ svg(width="500", height="100")
     g(transform="scale(1,-1)")
       each val, i in data
         unless highlight
-          rect(width="10", height=val, x=10*i, opacity="1.0")
+          rect(width=w, height=val, x=(w*i)+(i*m), fill=c, opacity="1.0")
         else
           if i === highlight
-            rect(width="10", height=val, x=10*i, opacity="1.0")
+            rect(width=w, height=val, x=(w*i)+(i*m), fill=c, opacity="1.0")
           else
-            rect(width="10", height=val, x=10*i, opacity="0.3")
-
+            rect(width=w, height=val, x=(w*i)+(i*m), fill=c, opacity="0.3")
 
 text(x="0", y="40", fill="red")
   | #{title}
